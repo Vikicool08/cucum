@@ -1,0 +1,149 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Verifying adactin booking order with valid credentials",
+        "description": "",
+        "id": "verifying-adactin-details;verifying-adactin-booking-order-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13166870700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the adactin page",
+            "match": {
+              "location": "LoginPageSteps.user_is_on_the_adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1970492900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Login into the adactin hotel homepage using \"karthi007\" and \"Karthi@1989\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"karthi007\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Karthi@1989\"",
+                  "offset": 60
+                }
+              ],
+              "location": "LoginPageSteps.login_into_the_adactin_hotel_homepage_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1575663500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Search hotel by selecting \"Adelaide\",\"Hotel Hervey\",\"Deluxe\" and search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Adelaide\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Hotel Hervey\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"Deluxe\"",
+                  "offset": 52
+                }
+              ],
+              "location": "LoginPageSteps.search_hotel_by_selecting_and_search(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 955041600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Select hotel using select",
+            "match": {
+              "location": "LoginPageSteps.select_hotel_using_select()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10372459000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Book the hotel using \"Vignesh\",\"Viki\",\"Chennai\",\"1456786534569876\",selectCreditCardType,\"May\",\"2022\",\"678\"and Book Now",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Vignesh\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"Viki\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"Chennai\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"1456786534569876\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"May\"",
+                  "offset": 88
+                },
+                {
+                  "val": "\"2022\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"678\"",
+                  "offset": 101
+                }
+              ],
+              "location": "LoginPageSteps.book_the_hotel_using_selectCreditCardType_and_Book_Now(String,String,String,String,String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 878504500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should verify success message",
+            "match": {
+              "location": "LoginPageSteps.user_should_verify_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying adactin details",
+    "description": "",
+    "id": "verifying-adactin-details",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/LoginPage.feature",
+    "tags": []
+  }
+]
